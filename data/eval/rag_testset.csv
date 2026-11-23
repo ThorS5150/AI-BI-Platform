@@ -1,0 +1,29 @@
+id,language,question,expected_doc,expected_section
+1,en,What is the maximum discount a dealer can grant without approval?,01_discount_policy.md,1.2
+2,fr,Quelle remise maximale un concessionnaire peut-il accorder sans approbation ?,01_discount_policy.md,1.2
+3,en,Who must approve a discount between 5 % and 10 %?,01_discount_policy.md,1.2
+4,fr,Une remise de 12 % est-elle permise ?,01_discount_policy.md,1.2
+5,en,Can a promotion be combined with an individual discount of 4 %?,01_discount_policy.md,1.3
+6,fr,Quelles informations doivent être consignées pour chaque remise supérieure à 0 ?,01_discount_policy.md,1.4
+7,en,How many days do I have to return a used vehicle?,02_returns_policy.md,2.1
+8,fr,Quel kilométrage maximal un véhicule d'occasion peut-il avoir pour un retour ?,02_returns_policy.md,2.1
+9,en,Under which condition can a new vehicle be returned?,02_returns_policy.md,2.2
+10,fr,Quels frais sont retenus lors d'un remboursement ?,02_returns_policy.md,2.3
+11,en,Which vehicles cannot be returned?,02_returns_policy.md,2.4
+12,en,What is the delivery radius for home delivery?,03_delivery_policy.md,3.1
+13,fr,Combien de temps prend une livraison à domicile après la signature ?,03_delivery_policy.md,3.2
+14,en,How much does home delivery cost between 50 and 100 km?,03_delivery_policy.md,3.3
+15,fr,Les délais de livraison changent-ils en hiver ?,03_delivery_policy.md,3.4
+16,en,What credit score is needed for financing?,04_financing_policy.md,4.1
+17,fr,Quelle est la durée maximale d'un prêt standard ?,04_financing_policy.md,4.2
+18,en,When does a loan above 72 months need approval?,04_financing_policy.md,4.2
+19,fr,Quelle mise de fonds est exigée pour un véhicule d'occasion ?,04_financing_policy.md,4.3
+20,en,What must a dealer disclose before the contract is signed?,04_financing_policy.md,4.4
+21,fr,Quelle est la durée de la garantie prolongée Demo Auto pour un véhicule neuf ?,05_warranty_policy.md,5.1
+22,en,How long is the powertrain warranty for a used vehicle under 5 years old?,05_warranty_policy.md,5.2
+23,fr,Dans quel délai une réclamation de garantie doit-elle être soumise ?,05_warranty_policy.md,5.3
+24,en,Are brake pads covered by the warranty?,05_warranty_policy.md,5.4
+25,en,What is the price of a Tesla Model 3 at Demo Auto?,none,none
+26,fr,Quel est le taux directeur de la Banque du Canada aujourd'hui ?,none,none
+27,en,Does Demo Auto offer a loyalty program for repeat customers?,none,none
+28,fr,Le concessionnaire accepte-t-il les paiements en cryptomonnaie ?,none,none

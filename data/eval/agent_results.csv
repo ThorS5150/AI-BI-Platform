@@ -1,0 +1,31 @@
+id,question,expected,predicted,passed
+1,What was the total revenue in 2024?,kpi,kpi,True
+2,How many units were sold in 2023?,kpi,kpi,True
+3,What is the average revenue per unit in 2022?,kpi,kpi,True
+4,What was the revenue growth compared to 2024?,kpi,kpi,True
+5,What share of rows had zero sales in 2021?,kpi,kpi,True
+6,What is the average discount per unit in 2025?,kpi,kpi,True
+7,What is the lead to test drive rate in 2023?,kpi,kpi,True
+8,How many days of inventory did we have in 2024?,kpi,kpi,True
+9,What was revenue in 2020?,kpi,kpi,True
+10,What is the year over year growth?,kpi,kpi,True
+11,Show me the total units sold per year,kpi,kpi,True
+12,What is the demand forecast for the next 12 weeks?,forecast,forecast,True
+13,What is the expected demand over the next 3 months?,forecast,forecast,True
+14,How many units do we expect to sell next month?,forecast,forecast;kpi,False
+15,Predict the sales for the coming weeks,forecast,forecast;kpi,False
+16,What is the return policy for a car bought online?,rag,rag,True
+17,How long is the warranty coverage?,rag,rag,True
+18,Which financing options are available?,rag,rag,True
+19,Which policy applies to discounts?,rag,rag,True
+20,What are the delivery rules for Montreal?,rag,rag,True
+21,Can a customer return a vehicle after 30 days?,rag,rag,True
+22,Is a discount allowed on used vehicles?,rag,rag,True
+23,Show the revenue for 2024 and the return policy,kpi;rag,kpi;rag,True
+24,What were the units sold in 2023 and what is the warranty period?,kpi;rag,kpi;rag,True
+25,What is the demand forecast and what does the delivery policy say?,forecast;rag,forecast;rag,True
+26,Quelle est la politique de retour ?,rag,rag,True
+27,Quel était le chiffre d'affaires en 2024 ?,kpi,kpi,True
+28,Quelles sont les conditions de financement ?,rag,rag,True
+29,Quelle est la prévision de la demande pour les 12 prochaines semaines ?,forecast,rag,False
+30,What does the warranty cover for engine parts?,rag,rag,True

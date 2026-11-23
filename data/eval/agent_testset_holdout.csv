@@ -1,0 +1,31 @@
+id,language,question,expected
+1,en,"What was the revenue in 2023?",kpi
+2,en,"How many vehicles did we sell in 2024?",kpi
+3,en,"What is our average discount per unit in 2022?",kpi
+4,en,"Total sales in 2025 please",kpi
+5,en,"What's the sales growth compared to last year?",kpi
+6,en,"How many days of inventory did we hold in 2023?",kpi
+7,en,"What was the turnover in 2021?",kpi
+8,en,"What proportion of rows had zero sales in 2020?",kpi
+9,en,"Revenue per car in 2024",kpi
+10,en,"How many units do we forecast for next year?",forecast
+11,en,"What is the outlook for demand in the next 8 weeks?",forecast
+12,en,"Forecast revenue for the next month",forecast
+13,en,"Estimate the sales for the coming months",forecast
+14,en,"Which return rules apply to a leased car?",rag
+15,en,"What does the warranty say about battery replacement?",rag
+16,en,"Can the customer finance a vehicle with bad credit?",rag
+17,en,"How quickly is a vehicle delivered after payment?",rag
+18,en,"Is a return allowed after 14 days?",rag
+19,en,"What are the discount policy conditions?",rag
+20,en,"Give me the revenue for 2022 and the warranty terms",kpi;rag
+21,en,"Show the sales in 2023 and the financing policy",kpi;rag
+22,en,"Projected revenue for 2026 and the delivery rules",forecast;rag
+23,en,"Compare the units sold in 2021 with the return policy",kpi;rag
+24,en,"How many units will we sell next quarter?",forecast
+25,fr,"Quel est le chiffre d'affaires en 2023 ?",kpi
+26,fr,"Combien de voitures ont été vendues en 2022 ?",kpi
+27,fr,"Quelles sont les règles de retour pour un véhicule ?",rag
+28,fr,"Quelle est la prévision des ventes pour l'an prochain ?",forecast
+29,fr,"Quelle est la demande prévue pour les 12 prochaines semaines ?",forecast
+30,fr,"Quelle est la politique de financement et combien de véhicules vendus en 2023 ?",kpi;rag

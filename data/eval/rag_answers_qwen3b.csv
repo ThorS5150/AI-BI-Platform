@@ -1,0 +1,29 @@
+﻿id,language,question,expected,found,expected_in_sources,passed,sources,answer
+1,en,What is the maximum discount a dealer can grant without approval?,01_discount_policy.md 1.2,TRUE,TRUE,TRUE,01_discount_policy.md 1.2; 04_financing_policy.md 4.4,5%
+2,fr,Quelle remise maximale un concessionnaire peut-il accorder sans approbation ?,01_discount_policy.md 1.2,TRUE,TRUE,TRUE,01_discount_policy.md 1.2; 04_financing_policy.md 4.4,5%
+3,en,Who must approve a discount between 5 % and 10 %?,01_discount_policy.md 1.2,TRUE,TRUE,TRUE,01_discount_policy.md 1.2; 01_discount_policy.md 1.4,The regional sales manager must approve a discount between 5 % and 10 %.
+4,fr,Une remise de 12 % est-elle permise ?,01_discount_policy.md 1.2,FALSE,FALSE,FALSE,,I could not find this in the Demo Auto policies. / Je n'ai rien trouvé à ce sujet dans les politiques de Demo Auto.
+5,en,Can a promotion be combined with an individual discount of 4 %?,01_discount_policy.md 1.3,FALSE,FALSE,FALSE,,I could not find this in the Demo Auto policies. / Je n'ai rien trouvé à ce sujet dans les politiques de Demo Auto.
+6,fr,Quelles informations doivent être consignées pour chaque remise supérieure à 0 ?,01_discount_policy.md 1.4,TRUE,TRUE,TRUE,01_discount_policy.md 1.4,Documentation avec le motif et le gestionnaire qui l'a approuvée.
+7,en,How many days do I have to return a used vehicle?,02_returns_policy.md 2.1,TRUE,TRUE,TRUE,02_returns_policy.md 2.1; 02_returns_policy.md 2.2,7 days
+8,fr,Quel kilométrage maximal un véhicule d'occasion peut-il avoir pour un retour ?,02_returns_policy.md 2.1,TRUE,TRUE,TRUE,02_returns_policy.md 2.1; 05_warranty_policy.md 5.1,20000
+9,en,Under which condition can a new vehicle be returned?,02_returns_policy.md 2.2,TRUE,TRUE,TRUE,02_returns_policy.md 2.2; 02_returns_policy.md 2.4,14 days only if the vehicle has a defect that cannot be repaired within 30 days.
+10,fr,Quels frais sont retenus lors d'un remboursement ?,02_returns_policy.md 2.3,TRUE,TRUE,TRUE,04_financing_policy.md 4.4; 02_returns_policy.md 2.3,250 CAD
+11,en,Which vehicles cannot be returned?,02_returns_policy.md 2.4,TRUE,TRUE,TRUE,02_returns_policy.md 2.4; 02_returns_policy.md 2.2,Vehicles with accident damage or modifications not approved by the manufacturer.
+12,en,What is the delivery radius for home delivery?,03_delivery_policy.md 3.1,TRUE,TRUE,TRUE,03_delivery_policy.md 3.3; 03_delivery_policy.md 3.1,100 km
+13,fr,Combien de temps prend une livraison à domicile après la signature ?,03_delivery_policy.md 3.2,TRUE,TRUE,TRUE,03_delivery_policy.md 3.2,3 à 5 jours ouvrables
+14,en,How much does home delivery cost between 50 and 100 km?,03_delivery_policy.md 3.3,TRUE,TRUE,TRUE,03_delivery_policy.md 3.3; 03_delivery_policy.md 3.1,250 CAD
+15,fr,Les délais de livraison changent-ils en hiver ?,03_delivery_policy.md 3.4,FALSE,FALSE,FALSE,,I could not find this in the Demo Auto policies. / Je n'ai rien trouvé à ce sujet dans les politiques de Demo Auto.
+16,en,What credit score is needed for financing?,04_financing_policy.md 4.1,TRUE,TRUE,TRUE,04_financing_policy.md 4.1; 04_financing_policy.md 4.4,620
+17,fr,Quelle est la durée maximale d'un prêt standard ?,04_financing_policy.md 4.2,TRUE,TRUE,TRUE,04_financing_policy.md 4.2; 04_financing_policy.md 4.1,84 mois
+18,en,When does a loan above 72 months need approval?,04_financing_policy.md 4.2,TRUE,TRUE,TRUE,04_financing_policy.md 4.2; 04_financing_policy.md 4.1,4.2 Loans above 72 months require approval from the finance department.
+19,fr,Quelle mise de fonds est exigée pour un véhicule d'occasion ?,04_financing_policy.md 4.3,TRUE,TRUE,TRUE,04_financing_policy.md 4.3; 05_warranty_policy.md 5.1; 05_warranty_policy.md 5.2,10%
+20,en,What must a dealer disclose before the contract is signed?,04_financing_policy.md 4.4,TRUE,TRUE,TRUE,04_financing_policy.md 4.4; 01_discount_policy.md 1.4,4.4 Disclosure: Dealers must present the annual percentage rate (APR) and the total cost of the loan.
+21,fr,Quelle est la durée de la garantie prolongée Demo Auto pour un véhicule neuf ?,05_warranty_policy.md 5.1,TRUE,TRUE,TRUE,05_warranty_policy.md 5.1; 05_warranty_policy.md 5.2,12 mois
+22,en,How long is the powertrain warranty for a used vehicle under 5 years old?,05_warranty_policy.md 5.2,TRUE,TRUE,TRUE,05_warranty_policy.md 5.2; 05_warranty_policy.md 5.1,6 months
+23,fr,Dans quel délai une réclamation de garantie doit-elle être soumise ?,05_warranty_policy.md 5.3,TRUE,TRUE,TRUE,05_warranty_policy.md 5.3,5 business days
+24,en,Are brake pads covered by the warranty?,05_warranty_policy.md 5.4,FALSE,FALSE,FALSE,,I could not find this in the Demo Auto policies. / Je n'ai rien trouvé à ce sujet dans les politiques de Demo Auto.
+25,en,What is the price of a Tesla Model 3 at Demo Auto?,none,FALSE,,TRUE,,I could not find this in the Demo Auto policies. / Je n'ai rien trouvé à ce sujet dans les politiques de Demo Auto.
+26,fr,Quel est le taux directeur de la Banque du Canada aujourd'hui ?,none,FALSE,,TRUE,,I could not find this in the Demo Auto policies. / Je n'ai rien trouvé à ce sujet dans les politiques de Demo Auto.
+27,en,Does Demo Auto offer a loyalty program for repeat customers?,none,FALSE,,TRUE,,I could not find this in the Demo Auto policies. / Je n'ai rien trouvé à ce sujet dans les politiques de Demo Auto.
+28,fr,Le concessionnaire accepte-t-il les paiements en cryptomonnaie ?,none,FALSE,,TRUE,,I could not find this in the Demo Auto policies. / Je n'ai rien trouvé à ce sujet dans les politiques de Demo Auto.

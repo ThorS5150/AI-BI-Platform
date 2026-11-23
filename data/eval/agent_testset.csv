@@ -1,0 +1,31 @@
+id,language,question,expected
+1,en,"What was the total revenue in 2024?",kpi
+2,en,"How many units were sold in 2023?",kpi
+3,en,"What is the average revenue per unit in 2022?",kpi
+4,en,"What was the revenue growth compared to 2024?",kpi
+5,en,"What share of rows had zero sales in 2021?",kpi
+6,en,"What is the average discount per unit in 2025?",kpi
+7,en,"What is the lead to test drive rate in 2023?",kpi
+8,en,"How many days of inventory did we have in 2024?",kpi
+9,en,"What was revenue in 2020?",kpi
+10,en,"What is the year over year growth?",kpi
+11,en,"Show me the total units sold per year",kpi
+12,en,"What is the demand forecast for the next 12 weeks?",forecast
+13,en,"What is the expected demand over the next 3 months?",forecast
+14,en,"How many units do we expect to sell next month?",forecast
+15,en,"Predict the sales for the coming weeks",forecast
+16,en,"What is the return policy for a car bought online?",rag
+17,en,"How long is the warranty coverage?",rag
+18,en,"Which financing options are available?",rag
+19,en,"Which policy applies to discounts?",rag
+20,en,"What are the delivery rules for Montreal?",rag
+21,en,"Can a customer return a vehicle after 30 days?",rag
+22,en,"Is a discount allowed on used vehicles?",rag
+23,en,"Show the revenue for 2024 and the return policy",kpi;rag
+24,en,"What were the units sold in 2023 and what is the warranty period?",kpi;rag
+25,en,"What is the demand forecast and what does the delivery policy say?",forecast;rag
+26,fr,"Quelle est la politique de retour ?",rag
+27,fr,"Quel était le chiffre d'affaires en 2024 ?",kpi
+28,fr,"Quelles sont les conditions de financement ?",rag
+29,fr,"Quelle est la prévision de la demande pour les 12 prochaines semaines ?",forecast
+30,en,"What does the warranty cover for engine parts?",rag

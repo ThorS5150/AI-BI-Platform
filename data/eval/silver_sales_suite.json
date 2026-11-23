@@ -1,0 +1,69 @@
+{
+  "name": "silver_sales_suite",
+  "id": "1d8faaf9-f03c-4884-a16a-6e90a5d0ddfc",
+  "expectations": [
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "date"
+      },
+      "meta": {},
+      "id": "b769e762-1932-4128-98b3-5f149d1118af",
+      "severity": "critical"
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "dealer_id"
+      },
+      "meta": {},
+      "id": "ef357b97-f48d-4b34-8d51-244aa2ad00c6",
+      "severity": "critical"
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "model"
+      },
+      "meta": {},
+      "id": "29fa9daa-b50f-4cd7-9412-7f494ace2a04",
+      "severity": "critical"
+    },
+    {
+      "type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "units_sold"
+      },
+      "meta": {},
+      "id": "9e6ca181-77fd-4eca-9c5b-3c8cb85fa343",
+      "severity": "critical"
+    },
+    {
+      "type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "units_sold",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "id": "54354bcd-f850-466c-8cb1-0e408ab60c18",
+      "severity": "critical"
+    },
+    {
+      "type": "expect_compound_columns_to_be_unique",
+      "kwargs": {
+        "column_list": [
+          "date",
+          "dealer_id",
+          "model"
+        ]
+      },
+      "meta": {},
+      "id": "92da6463-7610-4c42-9553-fcab7a1a18f3",
+      "severity": "critical"
+    }
+  ],
+  "meta": {
+    "great_expectations_version": "1.25.0"
+  },
+  "notes": null
+}

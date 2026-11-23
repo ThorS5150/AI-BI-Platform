@@ -1,0 +1,31 @@
+id,language,question,expected
+1,en,"Give me the sales figures for 2024",kpi
+2,en,"How much turnover did we make in 2022?",kpi
+3,en,"How many cars did we sell in 2021?",kpi
+4,en,"What is the average price we got per car in 2023?",kpi
+5,en,"Which dealer has the best revenue?",kpi
+6,en,"How many days of stock do we hold on average?",kpi
+7,en,"Did inventory go up in 2025?",kpi
+8,en,"What percentage of days had no sales in 2022?",kpi
+9,en,"Growth of revenue versus the year before",kpi
+10,en,"Test drives per online lead in 2024",kpi
+11,en,"How many units are forecast for the next quarter?",forecast
+12,en,"What is the projected demand for the coming 12 weeks?",forecast
+13,en,"Project next year's sales",forecast
+14,en,"What do we expect for demand in March?",forecast
+15,en,"What does the policy say about returning a car after purchase?",rag
+16,en,"Can I get a refund if the car is damaged on delivery?",rag
+17,en,"Is there a limit on financing for used cars?",rag
+18,en,"What coverage does the warranty include after 2 years?",rag
+19,en,"Are discounts stackable with promotions?",rag
+20,en,"Explain the rules for trade-ins",rag
+21,en,"How long can a buyer return a vehicle?",rag
+22,en,"Show the units sold in 2024 along with the financing rules",kpi;rag
+23,en,"What's the revenue trend and what does the warranty policy say about batteries?",kpi;rag
+24,en,"Forecast the units for the next 4 weeks and tell me the delivery policy",forecast;rag
+25,fr,"Quelle est la politique de garantie pour les batteries ?",rag
+26,fr,"Combien de véhicules avons-nous vendus en 2023 ?",kpi
+27,fr,"Quel est le chiffre d'affaires de 2025 ?",kpi
+28,fr,"Quelles sont les conditions de livraison à Montréal ?",rag
+29,fr,"Quelle sera la demande de véhicules le trimestre prochain ?",forecast
+30,fr,"Peux-tu me donner les prévisions de ventes pour les prochaines semaines ?",forecast

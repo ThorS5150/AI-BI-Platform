@@ -1,0 +1,150 @@
+id,question,sql,guard_ok,guard_error
+1,What were our earnings in 2024?,"SELECT 
+    SUM(f.revenue) AS total_earnings
+FROM 
+    workspace.platform.gold_fact_sales f
+JOIN 
+    workspace.platform.gold_dim_date d ON f.date_key = d.date_key
+WHERE 
+    d.year = 2024",TRUE,
+2,How many deals closed in 2023?,"SELECT SUM(units_sold) AS deals_closed_2023
+FROM workspace.platform.gold_fact_sales f
+JOIN workspace.platform.gold_dim_date d ON f.date_key = d.date_key
+WHERE d.year = 2023",TRUE,
+3,What is the gross take per vehicle sold in 2022?,"SELECT 
+    (SUM(f.final_price) / SUM(f.units_sold)) AS gross_take_per_vehicle_sold_2022
+FROM 
+    workspace.platform.gold_fact_sales f
+JOIN 
+    workspace.platform.gold_dim_date d ON f.date_key = d.date_key
+WHERE 
+    d.year = 2022",TRUE,
+4,Show the inventory levels in 2025,"SELECT 
+    d.date, 
+    d.year, 
+    d.month, 
+    d.week_of_year, 
+    d.day_of_week, 
+    d.is_weekend, 
+    l.city, 
+    l.region, 
+    SUM(f.inventory_available) AS total_inventory
+FROM 
+    workspace.platform.gold_fact_sales f
+JOIN 
+    workspace.platform.gold_dim_date d ON f.date_key = d.date_key
+JOIN 
+    workspace.platform.gold_dim_dealer dl ON f.dealer_key = dl.dealer_key
+JOIN 
+    workspace.platform.gold_dim_location l ON dl.location_key = l.location_key
+WHERE 
+    d.year = 2025
+GROUP BY 
+    d.date, 
+    d.year, 
+    d.month, 
+    d.week_of_year, 
+    d.day_of_week, 
+    d.is_weekend, 
+    l.city, 
+    l.region",TRUE,
+5,What share of days had no sales at all in 2021?,"SELECT 
+    1.0 * COUNT(CASE WHEN f.units_sold = 0 THEN d.date_key ELSE NULL END) / COUNT(d.date_key) AS share_no_sales
+FROM 
+    workspace.platform.gold_fact_sales f
+JOIN 
+    workspace.platform.gold_dim_date d ON f.date_key = d.date_key
+WHERE 
+    d.year = 2021",TRUE,
+6,How many inquiries turned into test drives in 2024?,"SELECT 
+    SUM(CASE WHEN d.year = 2024 THEN f.online_leads * f.test_drives_booked ELSE 0 END) AS inquiries_turned_into_test_drives
+FROM 
+    workspace.platform.gold_fact_sales AS f
+JOIN 
+    workspace.platform.gold_dim_date AS d ON f.date_key = d.date_key
+WHERE 
+    d.year = 2024",TRUE,
+7,Are we selling more cars than last year?,"SELECT 
+    d.year, 
+    SUM(f.units_sold) AS current_year_units_sold, 
+    LAG(SUM(f.units_sold)) OVER (ORDER BY d.year) AS previous_year_units_sold, 
+    SUM(f.units_sold) - LAG(SUM(f.units_sold)) OVER (ORDER BY d.year) AS units_sold_change
+FROM 
+    workspace.platform.gold_fact_sales f
+JOIN 
+    workspace.platform.gold_dim_date d ON f.date_key = d.date_key
+WHERE 
+    d.year BETWEEN 2020 AND 2025
+GROUP BY 
+    d.year
+ORDER BY 
+    d.year",TRUE,
+20,Give me the revenue of 2024 and the delivery policy,"SELECT 
+    SUM(CASE WHEN d.year = 2024 THEN f.revenue ELSE 0 END) AS revenue_2024,
+    MAX(CASE WHEN d.year = 2024 THEN f.promotion_type ELSE NULL END) AS delivery_policy_2024
+FROM 
+    workspace.platform.gold_fact_sales f
+JOIN 
+    workspace.platform.gold_dim_date d ON f.date_key = d.date_key
+WHERE 
+    d.year BETWEEN 2020 AND 2025
+GROUP BY 
+    MAX(CASE WHEN d.year = 2024 THEN f.promotion_type ELSE NULL END)",TRUE,
+21,"How many units sold in 2022, and what does the warranty cover?","SELECT 
+    SUM(f.units_sold) AS units_sold_2022,
+    d.warranty_cover AS warranty_cover
+FROM 
+    workspace.platform.gold_fact_sales f
+JOIN 
+    workspace.platform.gold_dim_date d ON f.date_key = d.date_key
+JOIN 
+    workspace.platform.gold_dim_model m ON f.model_key = m.model_key
+WHERE 
+    d.year = 2022
+GROUP BY 
+    d.warranty_cover",TRUE,
+23,What is the margin per car in 2023 and the financing rules?,"SELECT 
+    d.year,
+    d.month,
+    d.week_of_year,
+    d.day_of_week,
+    d.is_weekend,
+    f.model,
+    f.brand,
+    f.vehicle_category,
+    f.fuel_type,
+    f.transmission,
+    SUM(f.final_price - f.base_price - f.discount) / NULLIF(SUM(f.units_sold), 0) AS margin_per_car,
+    SUM(CASE WHEN f.promotion_type = 'Financing' THEN f.units_sold ELSE 0 END) AS financing_units_sold
+FROM 
+    workspace.platform.gold_fact_sales f
+JOIN 
+    workspace.platform.gold_dim_date d ON f.date_key = d.date_key
+JOIN 
+    workspace.platform.gold_dim_model m ON f.model_key = m.model_key
+WHERE 
+    d.year = 2023
+GROUP BY 
+    d.year, d.month, d.week_of_year, d.day_of_week, d.is_weekend, f.model, f.brand, f.vehicle_category, f.fuel_type, f.transmission",TRUE,
+25,Quel était le total des ventes en 2022 ?,"SELECT SUM(f.units_sold) AS total_units_sold_2022
+FROM workspace.platform.gold_fact_sales AS f
+JOIN workspace.platform.gold_dim_date AS d ON f.date_key = d.date_key
+WHERE d.year = 2022",TRUE,
+26,Combien de véhicules avons-nous livrés en 2023 ?,"SELECT SUM(f.units_sold) AS total_units_sold_2023
+FROM workspace.platform.gold_fact_sales AS f
+JOIN workspace.platform.gold_dim_date AS d ON f.date_key = d.date_key
+WHERE d.year = 2023",TRUE,
+29,Quel est le taux de conversion des prospects en 2024 ?,"SELECT 
+    (SUM(f.online_leads) / NULLIF(SUM(f.units_sold), 0)) AS conversion_rate
+FROM 
+    workspace.platform.gold_fact_sales f
+JOIN 
+    workspace.platform.gold_dim_date d ON f.date_key = d.date_key
+JOIN 
+    workspace.platform.gold_dim_dealer dl ON f.dealer_key = dl.dealer_key
+JOIN 
+    workspace.platform.gold_dim_location l ON dl.location_key = l.location_key
+JOIN 
+    workspace.platform.gold_dim_model m ON f.model_key = m.model_key
+WHERE 
+    d.year = 2024",TRUE,

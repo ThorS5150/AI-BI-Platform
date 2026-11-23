@@ -1,0 +1,31 @@
+id,question,expected,predicted,passed
+1,What was the revenue in 2023?,kpi,kpi,True
+2,How many vehicles did we sell in 2024?,kpi,kpi,True
+3,What is our average discount per unit in 2022?,kpi,kpi,True
+4,Total sales in 2025 please,kpi,kpi,True
+5,What's the sales growth compared to last year?,kpi,kpi,True
+6,How many days of inventory did we hold in 2023?,kpi,kpi,True
+7,What was the turnover in 2021?,kpi,kpi,True
+8,What proportion of rows had zero sales in 2020?,kpi,kpi,True
+9,Revenue per car in 2024,kpi,kpi,True
+10,How many units do we forecast for next year?,forecast,forecast,True
+11,What is the outlook for demand in the next 8 weeks?,forecast,forecast,True
+12,Forecast revenue for the next month,forecast,forecast,True
+13,Estimate the sales for the coming months,forecast,kpi,False
+14,Which return rules apply to a leased car?,rag,rag,True
+15,What does the warranty say about battery replacement?,rag,rag,True
+16,Can the customer finance a vehicle with bad credit?,rag,rag,True
+17,How quickly is a vehicle delivered after payment?,rag,rag,True
+18,Is a return allowed after 14 days?,rag,rag,True
+19,What are the discount policy conditions?,rag,rag,True
+20,Give me the revenue for 2022 and the warranty terms,kpi;rag,kpi;rag,True
+21,Show the sales in 2023 and the financing policy,kpi;rag,kpi;rag,True
+22,Projected revenue for 2026 and the delivery rules,forecast;rag,forecast;rag,True
+23,Compare the units sold in 2021 with the return policy,kpi;rag,kpi;rag,True
+24,How many units will we sell next quarter?,forecast,forecast,True
+25,Quel est le chiffre d'affaires en 2023 ?,kpi,kpi,True
+26,Combien de voitures ont été vendues en 2022 ?,kpi,kpi,True
+27,Quelles sont les règles de retour pour un véhicule ?,rag,rag,True
+28,Quelle est la prévision des ventes pour l'an prochain ?,forecast,forecast,True
+29,Quelle est la demande prévue pour les 12 prochaines semaines ?,forecast,forecast,True
+30,Quelle est la politique de financement et combien de véhicules vendus en 2023 ?,kpi;rag,kpi;rag,True

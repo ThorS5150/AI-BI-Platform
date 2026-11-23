@@ -1,0 +1,31 @@
+id,question,expected,predicted,passed
+1,Give me the sales figures for 2024,kpi,kpi,True
+2,How much turnover did we make in 2022?,kpi,rag,False
+3,How many cars did we sell in 2021?,kpi,rag,False
+4,What is the average price we got per car in 2023?,kpi,rag,False
+5,Which dealer has the best revenue?,kpi,kpi,True
+6,How many days of stock do we hold on average?,kpi,rag,False
+7,Did inventory go up in 2025?,kpi,kpi,True
+8,What percentage of days had no sales in 2022?,kpi,kpi,True
+9,Growth of revenue versus the year before,kpi,kpi,True
+10,Test drives per online lead in 2024,kpi,kpi,True
+11,How many units are forecast for the next quarter?,forecast,forecast;kpi,False
+12,What is the projected demand for the coming 12 weeks?,forecast,forecast,True
+13,Project next year's sales,forecast,kpi,False
+14,What do we expect for demand in March?,forecast,forecast,True
+15,What does the policy say about returning a car after purchase?,rag,rag,True
+16,Can I get a refund if the car is damaged on delivery?,rag,rag,True
+17,Is there a limit on financing for used cars?,rag,rag,True
+18,What coverage does the warranty include after 2 years?,rag,rag,True
+19,Are discounts stackable with promotions?,rag,rag,True
+20,Explain the rules for trade-ins,rag,rag,True
+21,How long can a buyer return a vehicle?,rag,rag,True
+22,Show the units sold in 2024 along with the financing rules,kpi;rag,kpi;rag,True
+23,What's the revenue trend and what does the warranty policy say about batteries?,kpi;rag,kpi;rag,True
+24,Forecast the units for the next 4 weeks and tell me the delivery policy,forecast;rag,forecast;kpi;rag,False
+25,Quelle est la politique de garantie pour les batteries ?,rag,rag,True
+26,Combien de véhicules avons-nous vendus en 2023 ?,kpi,rag,False
+27,Quel est le chiffre d'affaires de 2025 ?,kpi,kpi,True
+28,Quelles sont les conditions de livraison à Montréal ?,rag,rag,True
+29,Quelle sera la demande de véhicules le trimestre prochain ?,forecast,rag,False
+30,Peux-tu me donner les prévisions de ventes pour les prochaines semaines ?,forecast,kpi,False
